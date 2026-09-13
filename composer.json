@@ -1,0 +1,33 @@
+{
+  "name": "seotarek/laravel-llm-router",
+  "description": "Intelligent multi-provider LLM routing, cost optimization, and automated failover for Laravel 11.",
+  "keywords": ["laravel", "llm", "ai", "gemini", "openai", "claude", "router", "failover"],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Tarek Mohamed",
+      "email": "seotarek@gmail.com",
+      "homepage": "https://tarek-mohamed.me.eg"
+    }
+  ],
+  "require": {
+    "php": "^8.2",
+    "illuminate/support": "^10.0|^11.0",
+    "illuminate/http": "^10.0|^11.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Seotarek\\LlmRouter\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Seotarek\\LlmRouter\\LlmRouterServiceProvider"
+      ],
+      "aliases": {
+        "LlmRouter": "Seotarek\\LlmRouter\\Facades\\LlmRouter"
+      }
+    }
+  }
+}
